@@ -1,7 +1,4 @@
 # 📝 Cloud Chat - Frontend  
-
-![Cloud Chat](https://i.ibb.co.com/sJbGmWPf/screencapture-socrates-1-vercel-app-2025-03-09-00-30-36.png) <!-- Replace with an actual image URL -->
-
 A modern and sleek frontend for **Cloud Chat**, allowing users to upload, manage, and interact with their documents in an intuitive interface.  
 
 ## ✨ Features  
@@ -20,8 +17,8 @@ A modern and sleek frontend for **Cloud Chat**, allowing users to upload, manage
 ## 📂 Installation  
 
 ```bash
-git clone https://github.com/your-repo.git
-cd cloud-chat-frontend
+git clone https://github.com/salman679/socrates.git
+cd socrates
 npm install
 npm run dev
 ```
@@ -40,7 +37,4 @@ We welcome contributions! Feel free to open issues or pull requests.
 
 ## 📜 License  
 MIT License.  
-
----  
-Let me know if you need to tweak anything! 🚀🔥
 
