@@ -1,58 +1,46 @@
-# Socrates Cloud Chat - Frontend
+# 📝 Cloud Chat - Frontend  
 
-## Overview
-Socrates Cloud Chat is a file-based chat interface that allows users to upload and interact with documents securely. The web app enables users to add files via local upload, public URLs, Dropbox, and Google Drive while ensuring that no data is stored on external servers.
+![Cloud Chat](https://i.ibb.co.com/sJbGmWPf/screencapture-socrates-1-vercel-app-2025-03-09-00-30-36.png) <!-- Replace with an actual image URL -->
 
-## Features
-- **Drag & Drop Upload**: Easily upload files by dragging and dropping.
-- **Multiple File Sources**: Supports uploads from local storage, Dropbox, Google Drive, and public URLs.
-- **File Processing**: Allows text extraction with optional OCR functionality.
-- **User-Friendly Interface**: A clean and modern UI with a dark theme for an enhanced experience.
-- **Premium Upgrade Option**: Users can unlock additional features through a premium plan.
+A modern and sleek frontend for **Cloud Chat**, allowing users to upload, manage, and interact with their documents in an intuitive interface.  
 
-## Supported File Types
-- `.docx`
-- `.pdf`
-- `.epub`
-- Other text-based file formats
+## ✨ Features  
+✅ **Drag & Drop Upload** – Easily upload files from your local device.  
+✅ **Cloud Integration** – Supports **Google Drive** and **Dropbox**.  
+✅ **Public URL Upload** – Fetch files directly from a URL.  
+✅ **OCR Support** – Extract text from PDFs and images.  
+✅ **Dark Mode UI** – Stylish, modern, and easy on the eyes.  
 
-## Tech Stack
-- **Frontend**: React.js, Tailwind CSS
-- **UI Components**: Custom UI elements with a sleek, dark-themed design
+## 🛠️ Tech Stack  
+- 🎨 **Frontend:** React.js, Tailwind CSS  
+- ⚙ **State Management:** Redux (if used)  
+- 🌍 **API Handling:** Axios or Fetch API  
+- 🏗 **UI Components:** Custom-built & third-party libraries  
 
-## Installation & Setup
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/salman679/socrates.git
-   ```
-2. Navigate to the project directory:
-   ```sh
-   cd socrates
-   ```
-3. Install dependencies:
-   ```sh
-   npm install
-   ```
-4. Run the development server:
-   ```sh
-   npm run dev
-   ```
-5. Open the app in your browser:
-   ```
-   http://localhost:3000
-   ```
+## 📂 Installation  
 
-## Future Enhancements
-- Backend integration for file storage & AI chat capabilities
-- Improved document processing and summarization
-- User authentication and profile management
+```bash
+git clone https://github.com/your-repo.git
+cd cloud-chat-frontend
+npm install
+npm run dev
+```
 
-## Contributions
-Feel free to fork this repository and contribute. Pull requests are welcome!
+## 🚀 Usage  
+1. Upload files using **Drag & Drop**, **Google Drive**, or **Dropbox**.  
+2. Enter a **Public URL** to fetch documents.  
+3. Enable **OCR processing** for better document readability.  
+4. Click **Start** or **Deep Dive** to process documents.  
 
-## License
-This project is licensed under the MIT License.
+## 📸 Screenshot  
+![Screenshot](https://i.ibb.co.com/sJbGmWPf/screencapture-socrates-1-vercel-app-2025-03-09-00-30-36.png) <!-- Replace with an actual screenshot URL -->
 
----
-For any inquiries, please contact **mdsalmanizhar.com**
+## 🔗 Contributing  
+We welcome contributions! Feel free to open issues or pull requests.  
+
+## 📜 License  
+MIT License.  
+
+---  
+Let me know if you need to tweak anything! 🚀🔥
 
