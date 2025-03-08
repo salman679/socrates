@@ -169,7 +169,7 @@ export function FileUploadArea() {
         )}
 
         <div className="flex items-center justify-center gap-4 pt-4">
-          <Button className="px-12 py-6 text-lg rounded-full text-white border border-amber-500 hover:bg-amber-500/20 cursor-pointer">
+          <Button className="px-12 py-6 text-lg rounded-full text-white border border-amber-500 bg-neutral-800 hover:bg-neutral-800 cursor-pointer">
             Start
           </Button>
           <span className="text-white">or</span>

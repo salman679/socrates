@@ -7,18 +7,43 @@ import userImage from "../assets/Rectangle 1614425118.png";
 import { Button } from "./ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { FolderPlus, MessageSquarePlus, Search, Settings } from "lucide-react";
+import { useState } from "react";
 
 export function Sidebar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  console.log(isOpen);
+
   return (
-    <div className="w-60 h-full flex flex-col pr-3 border-border bg-neutral-800 backdrop-blur">
+    <div
+      className={`h-full absolute md:static flex flex-col pr-3 border-border bg-neutral-800 backdrop-blur ${
+        isOpen ? "w-60" : "w-16"
+      }`}
+    >
       <div className="flex items-center gap-2">
-        <img src={logo} alt="logo" className="w-7 h-7" />
-        <span className="font-semibold text-lg">socrates</span>
+        <img
+          src={logo}
+          alt="logo"
+          className="w-7 h-7"
+          onClick={() => setIsOpen(!isOpen)}
+        />
+        <span
+          className={`font-semibold text-lg ${isOpen ? "block" : "hidden"}`}
+        >
+          socrates
+        </span>
         <div className="ml-auto flex items-center gap-1">
-          <Button size="icon" className="h-8 w-8 cursor-pointer">
+          <Button
+            size="icon"
+            className={`h-8 w-8 cursor-pointer ${isOpen ? "" : "hidden"}`}
+          >
             <Search className="h-4 w-4" />
           </Button>
-          <Button size="icon" className="h-8 w-8 cursor-pointer">
+          <Button
+            size="icon"
+            className={`h-8 w-8 cursor-pointer`}
+            onClick={() => setIsOpen(!isOpen)}
+          >
             <img src={arrow} alt="" />
           </Button>
         </div>
@@ -27,22 +52,22 @@ export function Sidebar() {
       <div className="py-4 space-y-2">
         <Button
           variant="outline"
-          className="w-full justify-start gap-2 bg-neutral-800 rounded-full border-gray-400/20 hover:bg-gray-400/20 hover:text-white cursor-pointer"
+          className="w-full flex items-center justify-start gap-2 bg-neutral-800 rounded-full border-gray-400/20 hover:bg-gray-400/20 hover:text-white cursor-pointer"
         >
           <FolderPlus className="h-4 w-4" />
-          Add folder
+          {isOpen && <span> Add folder</span>}
         </Button>
         <Button
           variant="outline"
           className="w-full justify-start gap-2 bg-neutral-800 rounded-full border-gray-400/20 hover:bg-gray-400/20 hover:text-white cursor-pointer"
         >
           <MessageSquarePlus className="h-4 w-4" />
-          Create chat
+          {isOpen && <span>Create chat</span>}
         </Button>
       </div>
 
       <div className="mt-auto">
-        <div className="py-4 border-border">
+        <div className={`py-4 border-border ${isOpen ? "" : "hidden"}`}>
           <div className="rounded-2xl bg-neutral-700 p-4 space-y-2">
             <div>
               <h3 className="font-medium">Upgrade to Premium</h3>
@@ -64,7 +89,9 @@ export function Sidebar() {
             <Button size="icon" className="rounded-full h-8 w-8 bg-zinc-700">
               <img src={routing} alt="routing" />
             </Button>
-            <span className="text-sm">Flow AI Templates</span>
+            <span className={`text-sm ${isOpen ? "block" : "hidden"}`}>
+              Flow AI Templates
+            </span>
           </div>
         </div>
 
@@ -75,12 +102,16 @@ export function Sidebar() {
                 <AvatarImage src={userImage} alt="Jessica Mills" />
                 <AvatarFallback>JM</AvatarFallback>
               </Avatar>
-              <span className="text-sm">Jessica Mills</span>
+              <span className={`text-sm ${isOpen ? "block" : "hidden"}`}>
+                Jessica Mills
+              </span>
             </div>
             <Button
               variant="ghost"
               size="icon"
-              className="h-8 w-8 rounded-full cursor-pointer"
+              className={`h-8 w-8 rounded-full cursor-pointer ${
+                isOpen ? "" : "hidden"
+              }`}
             >
               <Settings className="h-4 w-4" />
             </Button>
