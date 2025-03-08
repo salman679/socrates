@@ -1,21 +1,20 @@
-"use client";
-
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Checkbox } from "@/components/ui/checkbox";
 import icon1 from "../assets/Icons1.svg";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
-import { Cloud, FileText, Sparkles, X } from "lucide-react";
+} from "./ui/tooltip";
+
 import cloud from "../assets/icon=cloud.svg";
 import icon2 from "../assets/Icons2.svg";
 import dropbox from "../assets/—Pngtree—dropbox icon_3584851.png";
 import drive from "../assets/image 83.png";
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
+import { Checkbox } from "./ui/checkbox";
+import { Sparkles, X } from "lucide-react";
 
 type FileItem = {
   id: string;
@@ -89,10 +88,7 @@ export function FileUploadArea() {
                     placeholder="https://example.com/file.pdf"
                     className="bg-neutral-700  border-none rounded-l-full w-fit focus:outline-none focus:ring-0 focus-visible:ring-0"
                   />
-                  <Button
-                    variant="none"
-                    className="bg-neutral-500 rounded-full -ml-5 cursor-pointer"
-                  >
+                  <Button className="bg-neutral-500 rounded-full -ml-5 cursor-pointer">
                     Add
                   </Button>
                 </div>
@@ -173,10 +169,7 @@ export function FileUploadArea() {
         )}
 
         <div className="flex items-center justify-center gap-4 pt-4">
-          <Button
-            variant="none"
-            className="px-12 py-6 text-lg rounded-full text-white border border-amber-500 hover:bg-amber-500/20 cursor-pointer"
-          >
+          <Button className="px-12 py-6 text-lg rounded-full text-white border border-amber-500 hover:bg-amber-500/20 cursor-pointer">
             Start
           </Button>
           <span className="text-white">or</span>

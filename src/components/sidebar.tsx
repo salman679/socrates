@@ -4,8 +4,8 @@ import arrow from "../assets/icon=sidebar-left.svg";
 import routing from "../assets/routing-2.svg";
 import userImage from "../assets/Rectangle 1614425118.png";
 
-import { Button } from "@/components/ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "./ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { FolderPlus, MessageSquarePlus, Search, Settings } from "lucide-react";
 
 export function Sidebar() {
@@ -15,10 +15,10 @@ export function Sidebar() {
         <img src={logo} alt="logo" className="w-7 h-7" />
         <span className="font-semibold text-lg">socrates</span>
         <div className="ml-auto flex items-center gap-1">
-          <Button variant="none" size="icon" className="h-8 w-8 cursor-pointer">
+          <Button size="icon" className="h-8 w-8 cursor-pointer">
             <Search className="h-4 w-4" />
           </Button>
-          <Button variant="none" size="icon" className="h-8 w-8 cursor-pointer">
+          <Button size="icon" className="h-8 w-8 cursor-pointer">
             <img src={arrow} alt="" />
           </Button>
         </div>
@@ -61,11 +61,7 @@ export function Sidebar() {
 
         <div className="border-border">
           <div className="flex items-center gap-2">
-            <Button
-              variant="none"
-              size="icon"
-              className="rounded-full h-8 w-8 bg-zinc-700"
-            >
+            <Button size="icon" className="rounded-full h-8 w-8 bg-zinc-700">
               <img src={routing} alt="routing" />
             </Button>
             <span className="text-sm">Flow AI Templates</span>

@@ -1,5 +1,5 @@
-import { Sidebar } from "@/components/sidebar";
-import { FileUploadArea } from "@/components/file-upload-area";
+import { Sidebar } from "./components/sidebar";
+import { FileUploadArea } from "./components/file-upload-area";
 
 export default function Home() {
   return (
