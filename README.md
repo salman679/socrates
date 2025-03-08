@@ -1,54 +1,58 @@
-# React + TypeScript + Vite
+# Socrates Cloud Chat - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+Socrates Cloud Chat is a file-based chat interface that allows users to upload and interact with documents securely. The web app enables users to add files via local upload, public URLs, Dropbox, and Google Drive while ensuring that no data is stored on external servers.
 
-Currently, two official plugins are available:
+## Features
+- **Drag & Drop Upload**: Easily upload files by dragging and dropping.
+- **Multiple File Sources**: Supports uploads from local storage, Dropbox, Google Drive, and public URLs.
+- **File Processing**: Allows text extraction with optional OCR functionality.
+- **User-Friendly Interface**: A clean and modern UI with a dark theme for an enhanced experience.
+- **Premium Upgrade Option**: Users can unlock additional features through a premium plan.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Supported File Types
+- `.docx`
+- `.pdf`
+- `.epub`
+- Other text-based file formats
 
-## Expanding the ESLint configuration
+## Tech Stack
+- **Frontend**: React.js, Tailwind CSS
+- **UI Components**: Custom UI elements with a sleek, dark-themed design
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Installation & Setup
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/salman679/socrates.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd socrates
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+4. Run the development server:
+   ```sh
+   npm run dev
+   ```
+5. Open the app in your browser:
+   ```
+   http://localhost:3000
+   ```
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Future Enhancements
+- Backend integration for file storage & AI chat capabilities
+- Improved document processing and summarization
+- User authentication and profile management
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Contributions
+Feel free to fork this repository and contribute. Pull requests are welcome!
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## License
+This project is licensed under the MIT License.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+For any inquiries, please contact **mdsalmanizhar.com**
+
